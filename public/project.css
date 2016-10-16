@@ -1,0 +1,36 @@
+html, body, ol, h1, h2, h3, h4, h5, h6, form, fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+      background-color: #ffffff;
+	  text-align: center;
+    }
+.text {
+	color: #d9d9d9;
+}
+.text2 {
+	color: #a8a8a8;
+}
+.box {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 1em;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 150px;
+	background-color: #EBF5FB; /* e9f7ef */
+}
+/* Use .box as the class for divs I want inline. class="box"  */
+i {
+	color: #b3ccff;		/* change garbage can color */
+}
+.footer-text {
+	color: 909090;
+}
+a {
+	display: block;
+}

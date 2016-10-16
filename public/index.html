@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Accessible Home Page</title>
+  <!-- Bootstrap CSS --> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- font awesome -->  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Bootstrap JS -->  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  <!-- jQuery -->        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- Firebase CDN -->  <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+  <!-- js -->            <script src="project.js"></script>
+  <!-- custom CSS -->    <link rel="stylesheet" type="text/css" href="project.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="panel-group">
+      <div class="panel panel-primary">
+
+<!-- DIV AND SUBMIT FORM -->
+
+        <div class="panel-heading" align="right"><text class="text">[ + ]</text>
+            <div align="left" id="toggle">
+              
+              <form action="" id="message-form" class="form-inline"> 
+                  <div class="form-group">
+                  <label for="message">Enter Full Web Link: </label>
+                  <input id="message" type="text" class="form-control" placeholder="http://www.abc.com"></input>
+                  <label for="nickname">Short Name: </label>
+                  <input id="nickname" type="text" class="form-control" placeholder="E.g. ABC"></input>
+                  <button class="btn">Add</button>
+                  </div>
+            </form>
+          </div>
+        </div>
+    </div>
+
+<!-- CONTENT URLS SUBMITTED SECTION -->
+
+      <div class="panel panel-default">
+        <!-- Customize the content of the following div for your app -->
+        <div class="panel-heading">Web Favorites</div>
+        <div class="panel-body">
+          <div class="message-board">   <!-- modified to use div vs. ul -->
+          </div>
+        </div>
+
+      <!-- TEST OUT DELETE BOOKMARKS SECTION HERE -->
+        <div class="panel-heading" align="right"><text2 class="text2">[ - ]</text2>
+          <div align="left" id="toggle2">
+              Select bookmarks to delete by clicking on the garbage can icon.
+              <ul class="delete-board">   <!-- use <UL> to create list for deletions, new class for 'delete-board' -->
+              </ul>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!-- BELOW IS THE TOGGLE SCRIPT. Unclear why this couldn't be included in the JS file. Didn't work. -->
+<script>
+$("div#toggle").hide();
+  $( "text" ).click(function() {
+    $( "div#toggle" ).slideToggle( "slow" );
+  });
+</script>
+
+<script>
+$("div#toggle2").hide();
+  $( "text2" ).click(function() {
+    $( "div#toggle2" ).slideToggle( "slow" );
+  });
+</script>
+
+</body>
+
+</html>
+
