@@ -15,7 +15,7 @@ The purpose of this project is to create a browser home page for persons with ph
 
 ## Screenshot
 
-https://github.com/lukecongdon/accessible-web-home/accessible_home_page1.png
+(/accessible-web-home/accessible_home_page1.png?raw=true "Screenshot")
 
 ## Notes
 * The initial use of this page expects the aid of someone to create a Firebase account and update the project.js file with the new identification data.
